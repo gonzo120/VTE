@@ -10,7 +10,7 @@ Acá podras ver toda la información relacionada con nuestro VTE, asi como el eq
 
 ## Información importante
 
-* En la carpeta Beta_7.1 encontraran toda la inforción del codigo utilizado para la elaboración del proyecto tanto como el frontend como el backend.
+* En la carpeta Beta_7.1 encontraran toda la información del codigo utilizado para la elaboración del proyecto tanto como el frontend como el backend.
 
 
 # Información Personal
