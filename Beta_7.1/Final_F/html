@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ejemplo de mostrar el ID de una colección de Firebase</title>
+  </head>
+  <body>
+    <h1>La ID de la colección es:</h1>
+    <div id="collection-id"></div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore.js"></script>
+    <script>
+      // Configurar Firebase
+      const firebaseConfig = {
+            apiKey: "AIzaSyCKJh6nG5BeYBxLFaQdCQ4--h9liPqVoz4",
+            authDomain: "vteumilitar.firebaseapp.com",
+            projectId: "vteumilitar",
+            storageBucket: "vteumilitar.appspot.com",
+            messagingSenderId: "220052190913",
+            appId: "1:220052190913:web:1867b25ed33a24268c4640",
+            measurementId: "G-YCXMCTDYMK"// Paste your firebase config here// Aquí van las opciones de configuración de tu proyecto en Firebase
+      };
+      firebase.initializeApp(firebaseConfig);
+
+      // Obtener la referencia a la colección
+      const db = firebase.firestore();
+      const collectionRef = db.collection("database");
+
+      // Obtener la ID de la colección
+      const collectionId = collectionRef.id;
+
+      // Insertar la ID en el contenido HTML del elemento
+      const collectionIdElement = document.getElementById("Numerico");
+      collectionIdElement.textContent = collectionId;
+    </script>
+  </body>
+</html>
